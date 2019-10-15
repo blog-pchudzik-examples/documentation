@@ -1,0 +1,18 @@
+:page-layout: docs
+:doctitle: my system
+:toc: left
+:source-highlighter: coderay
+:data-uri:
+:doctype: book
+:icons: font
+:imagesdir: .
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus placerat ullamcorper. In hac habitasse platea dictumst. Aliquam nulla leo, cursus a aliquam eu, ultricies vitae dui. Etiam fermentum sagittis ex hendrerit vulputate. Aenean posuere, diam in tempor suscipit, sapien tortor porttitor justo, id dictum diam urna vel nibh. Phasellus congue justo at mi volutpat consequat. Phasellus odio massa, commodo eu tellus in, pulvinar eleifend augue. Proin nec sapien tellus. Nullam laoreet augue quam, eu volutpat neque euismod et.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum interdum urna at purus malesuada, vel iaculis orci vulputate. Suspendisse vestibulum justo sed elit sollicitudin laoreet. Morbi convallis condimentum laoreet. Suspendisse tristique, ante ac mattis eleifend, nisi arcu tristique sapien, quis rutrum turpis ipsum vel risus. Sed sit amet enim id arcu ultrices interdum. Nunc a commodo augue. Proin ultrices lorem enim, semper accumsan quam mollis ac.
+
+Mauris venenatis eros et libero sollicitudin, in blandit odio tincidunt. Nunc vestibulum neque et lectus euismod convallis. Praesent sit amet suscipit velit, quis facilisis odio. Quisque pretium dictum neque in dictum. Integer pulvinar et diam id fringilla. Curabitur suscipit interdum mi, non commodo leo. Phasellus facilisis augue neque, rhoncus pulvinar mi dapibus a.
+
+include::architecture_diagram.adoc[]
+
+include::adr/index.adoc[]

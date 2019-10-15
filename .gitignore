@@ -1,0 +1,5 @@
+docs/docker_out.html
+docs/architecture_diagram.svg*
+docs/.asciidoctor/*
+build
+.gradle

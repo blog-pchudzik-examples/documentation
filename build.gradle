@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.6.1'
+         classpath "com.github.jruby-gradle:jruby-gradle-plugin:1.5.0"
+    }
+}
+
+plugins {
+	id 'java'
+}
+
+apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'com.github.jruby-gradle.base'
+
+group = 'com.pchudzik.blog.example.documentation'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	gems 'rubygems:asciidoctor-diagram:1.5.19'
+}
+
+asciidoctor {
+  dependsOn jrubyPrepare
+  gemPath = jrubyPrepare.outputDir
+  sourceDir = file('docs')
+  sources {
+    include 'index.adoc'
+  }
+  separateOutputDirs = false
+  logDocuments = true
+  outputDir = file('build/docs')
+  requires = ['asciidoctor-diagram']
+}

@@ -1,0 +1,14 @@
+=== MySQL as system database - [date]
+
+==== Context
+Problem to solve, deciion drivers, other considered options
+
+==== Status
+Approved
+
+==== Consequences
+
+* Pros
+** Transactions
+* Cons
+** Scalability

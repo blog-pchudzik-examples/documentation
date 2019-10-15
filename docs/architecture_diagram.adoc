@@ -1,0 +1,25 @@
+== System Architecture
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus placerat ullamcorper. In hac habitasse platea dictumst. Aliquam nulla leo, cursus a aliquam eu, ultricies vitae dui. Etiam fermentum sagittis ex hendrerit vulputate. Aenean posuere, diam in tempor suscipit, sapien tortor porttitor justo, id dictum diam urna vel nibh. Phasellus congue justo at mi volutpat consequat. Phasellus odio massa, commodo eu tellus in, pulvinar eleifend augue. Proin nec sapien tellus. Nullam laoreet augue quam, eu volutpat neque euismod et.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum interdum urna at purus malesuada, vel iaculis orci vulputate. Suspendisse vestibulum justo sed elit sollicitudin laoreet. Morbi convallis condimentum laoreet. Suspendisse tristique, ante ac mattis eleifend, nisi arcu tristique sapien, quis rutrum turpis ipsum vel risus. Sed sit amet enim id arcu ultrices interdum. Nunc a commodo augue. Proin ultrices lorem enim, semper accumsan quam mollis ac.
+
+=== System C1 diagram
+
+[plantuml, architecture_diagram, svg]
+.... 
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+title C1 system context diagram
+
+Person(internal, "Internal user", "Company employee")
+Person(customer, "Customer", "Shopper")
+
+System(shopping_system, "Shoping System", "shoping system")
+System_Ext(inventory_service, "Inventory Service", "Legacy inventory service")
+
+Rel(internal, shopping_system, "Configures", "Administration of shopping system")
+Rel(customer, shopping_system, "Buys things", "Buys project")
+
+Rel(inventory_service, shopping_system, "Reads prices and inventory items")
+.... 
